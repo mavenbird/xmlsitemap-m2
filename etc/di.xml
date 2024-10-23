@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+
+<!--
+/*
+ * Mavenbird Technologies Private Limited
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://mavenbird.com/Mavenbird-Module-License.txt
+ *
+ * =================================================================
+ *
+ * @category   Mavenbird
+ * @package    Mavenbird_XmlSitemap
+ * @author     Mavenbird Team
+ * @copyright  Copyright (c) 2018-2024 Mavenbird Technologies Private Limited ( http://mavenbird.com )
+ * @license    http://mavenbird.com/Mavenbird-Module-License.txt
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sitemap\Model\ResourceModel\Catalog\Product">
+        <plugin name="Mavenbird_XmlSitemap_Plugin_Magento_Sitemap_Model_ResourceModel_Catalog_Product" type="Mavenbird\XmlSitemap\Plugin\Magento\Sitemap\Model\ResourceModel\Catalog\Product" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Sitemap\Model\ResourceModel\Catalog\Category">
+        <plugin name="Mavenbird_XmlSitemap_Plugin_Magento_Sitemap_Model_ResourceModel_Catalog_Category" type="Mavenbird\XmlSitemap\Plugin\Magento\Sitemap\Model\ResourceModel\Catalog\Category" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Sitemap\Model\ResourceModel\Cms\Page">
+        <plugin name="Mavenbird_XmlSitemap_Plugin_Magento_Sitemap_Model_ResourceModel_Cms_Page" type="Mavenbird\XmlSitemap\Plugin\Magento\Sitemap\Model\ResourceModel\Cms\Page" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Mavenbird\Blog\Model\ResourceModel\Post\Collection">
+        <plugin name="Mavenbird_XmlSitemap_Plugin_Mavenbird_Blog_Model_ResourceModel_Post_Collection" type="Mavenbird\XmlSitemap\Plugin\Mavenbird\Blog\Model\ResourceModel\Post\Collection" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Mavenbird\Blog\Model\ResourceModel\Category\Collection">
+        <plugin name="Mavenbird_XmlSitemap_Plugin_Mavenbird_Blog_Model_ResourceModel_Category_Collection" type="Mavenbird\XmlSitemap\Plugin\Mavenbird\Blog\Model\ResourceModel\Category\Collection" sortOrder="10" disabled="false"/>
+    </type>
+    <preference for="Mavenbird\XmlSitemap\Api\GetModuleVersionInterface" type="Mavenbird\XmlSitemap\Model\GetModuleVersion" />
+    <preference for="Mavenbird\XmlSitemap\Api\SecureHtmlRendererInterface" type="Mavenbird\XmlSitemap\Model\View\Helper\SecureHtmlRenderer"/>
+</config>
