@@ -74,7 +74,7 @@ Easily add additional URLs to the sitemap, such as landing pages or special camp
 
 ## Support:
 Dedicated support team available to assist with installation, customization, and any other queries or concerns.
-**[support@mavenbird.com](mailto:support@mavenbird.com)** 
+*[support@mavenbird.com](mailto:support@mavenbird.com)*  
 
 ## Get Started:
 Optimize your store's SEO and improve your search engine visibility by setting up the Magento 2 XML Sitemap Extension today!

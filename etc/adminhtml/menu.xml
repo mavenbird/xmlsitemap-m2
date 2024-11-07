@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mavenbird Technologies Private Limited
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://mavenbird.com/Mavenbird-Module-License.txt
+ *
+ * =================================================================
+ *
+ * @category   Mavenbird
+ * @package    Mavenbird_XmlSitemap
+ * @author     Mavenbird Team
+ * @copyright  Copyright (c) 2018-2024 Mavenbird Technologies Private Limited ( http://mavenbird.com )
+ * @license    http://mavenbird.com/Mavenbird-Module-License.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <update id="Magento_Backend::mbmenu" title="Mavenbird" module="Magento_Backend" sortOrder="10" resource="Magento_Backend::mbmenu" />
+
+        <add id="Mavenbird_XmlSitemap::Heading" title="Xml Sitemap" module="Mavenbird_XmlSitemap" sortOrder="20" parent="Magento_Backend::mbmenu" resource="Mavenbird_XmlSitemap::Heading" />
+        <add id="Mavenbird_XmlSitemap::configuration" title="Configuration" module="Mavenbird_XmlSitemap" sortOrder="30" parent="Mavenbird_XmlSitemap::Heading" action="adminhtml/system_config/edit/section/mfxmlsitemap" resource="Mavenbird_XmlSitemap::configuration" />
+    </menu>
+</config>
