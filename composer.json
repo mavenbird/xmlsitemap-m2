@@ -2,10 +2,11 @@
   "name": "mavenbird/module-xml-sitemap",
   "description": "Mavenbird  XML Sitemap for Magento 2",
   "require": {
-      "php": ">=8.0.0"
+      "php": ">=8.0.0",
+      "mavenbird/module-core": "*"
   },
   "type": "magento2-module",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "license": "proprietary",
   "authors": [
       {
