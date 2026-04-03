@@ -1,4 +1,4 @@
-1.1.0 - September 1, 2024
+1.1.0 – March 18, 2026
 =============
 * Minor Bug Fixes
 
